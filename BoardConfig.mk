@@ -54,9 +54,6 @@ SOONG_CONFIG_ufsbsg_ufsframework := bsg
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kalama
 
-# DTB
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-
 # Display
 TARGET_SCREEN_DENSITY := 450
 
@@ -75,6 +72,7 @@ BOARD_INIT_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
 # Kernel
+TARGET_KERNEL_ARCH := arm64
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
@@ -86,6 +84,12 @@ BOARD_KERNEL_CMDLINE := \
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 TARGET_HAS_GENERIC_KERNEL_HEADERS := true
+
+TARGET_PREBUILT_KERNEL := device/samsung/dm2q/prebuilt/Image.gz
+TARGET_PREBUILT_DTB := device/samsung/dm2q/prebuilt/dtb
+BOARD_PREBUILT_DTBOIMAGE := device/samsung/dm2q/prebuilt/recovery_dtbo
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_INCLUDE_RECOVERY_DTBO := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
