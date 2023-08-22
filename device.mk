@@ -57,7 +57,8 @@ PRODUCT_PACKAGES += \
     libsndcardparser \
     libtinycompress \
     libvolumelistener \
-    sound_trigger.primary.kalama
+    sound_trigger.primary.kalama \
+    libar-pal
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8550/audio
 

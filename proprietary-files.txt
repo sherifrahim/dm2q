@@ -98,6 +98,14 @@ vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 # Audio configs
 vendor/lib/hw/audio.primary.kalama.so
 vendor/lib64/hw/audio.primary.kalama.so
+vendor/lib/libar-acdb.so
+vendor/lib/libar-gpr.so
+-vendor/lib/libar-gsl.so
+-vendor/lib/libar-pal.so
+vendor/lib64/libar-acdb.so
+vendor/lib64/libar-gpr.so
+-vendor/lib64/libar-gsl.so
+-vendor/lib64/libar-pal.so
 vendor/etc/audio/sku_kalama/audio_effects.conf
 vendor/etc/audio/sku_kalama/audio_effects.xml
 vendor/etc/audio/sku_kalama/mixer_paths.xml
